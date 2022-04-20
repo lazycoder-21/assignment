@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/darkest"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/tvFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_medium"
+        android:text="Filters"
+        android:textColor="@color/text_color"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/text_color" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/etState"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/inter_medium"
+            android:inputType="none"
+            android:paddingHorizontal="5dp"
+            android:paddingVertical="5dp"
+            android:text="State"
+            android:textSize="14sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/etCity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/inter_medium"
+            android:inputType="none"
+            android:paddingHorizontal="5dp"
+            android:paddingVertical="5dp"
+            android:text="City"
+            android:textSize="14sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

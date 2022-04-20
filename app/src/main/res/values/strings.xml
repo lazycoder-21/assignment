@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Assignment</string>
+    <string name="error_message">Something went wrong at our end..</string>
+    <string name="retry">Retry</string>
+    <string name="exit_message">Are you sure?</string>
+
+</resources>

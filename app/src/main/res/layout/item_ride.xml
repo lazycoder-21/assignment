@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    android:background="@drawable/bg_item_rides"
+    android:padding="20dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent" />
+
+    <TextView
+        android:id="@+id/tvCityName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/inter_medium"
+        android:text="City Name"
+        android:textColor="@color/text_color"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivMap" />
+
+    <TextView
+        android:id="@+id/tvStateName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/inter_medium"
+        android:text="State Name"
+        android:textColor="@color/text_color"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivMap" />
+
+    <TextView
+        android:id="@+id/tvRideIdTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/inter_medium"
+        android:text="Ride Id :"
+        android:textColor="@color/text_color"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCityName" />
+
+    <TextView
+        android:id="@+id/tvRideId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:fontFamily="@font/inter_medium"
+        android:text="002"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/tvRideIdTitle"
+        app:layout_constraintTop_toTopOf="@id/tvRideIdTitle" />
+
+
+    <TextView
+        android:id="@+id/tvOriginStationTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/inter_medium"
+        android:text="Origin Station :"
+        android:textColor="@color/text_color"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvRideIdTitle" />
+
+    <TextView
+        android:id="@+id/tvOriginStationId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:fontFamily="@font/inter_medium"
+        android:text="20"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/tvOriginStationTitle"
+        app:layout_constraintTop_toTopOf="@id/tvOriginStationTitle" />
+
+
+    <TextView
+        android:id="@+id/tvStationPathTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/inter_medium"
+        android:text="station_path :"
+        android:textColor="@color/text_color"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvOriginStationTitle" />
+
+    <TextView
+        android:id="@+id/tvStationPath"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:fontFamily="@font/inter_medium"
+        android:text="002"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvStationPathTitle"
+        app:layout_constraintTop_toTopOf="@id/tvStationPathTitle"
+        tools:text="[20, 39, 40, 42, 54, 63, 72, 88, 98]" />
+
+    <TextView
+        android:id="@+id/tvDateTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/inter_medium"
+        android:text="Date :"
+        android:textColor="@color/text_color"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvStationPath" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:fontFamily="@font/inter_medium"
+        android:text="15th Feb 2022 16:33"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        app:layout_constraintStart_toEndOf="@id/tvDateTitle"
+        app:layout_constraintTop_toTopOf="@id/tvDateTitle" />
+
+    <TextView
+        android:id="@+id/tvDistanceTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/inter_medium"
+        android:text="Distance :"
+        android:textColor="@color/text_color"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDate" />
+
+    <TextView
+        android:id="@+id/tvDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:fontFamily="@font/inter_medium"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/tvDistanceTitle"
+        app:layout_constraintTop_toTopOf="@id/tvDistanceTitle" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
